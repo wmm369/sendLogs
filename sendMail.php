@@ -122,7 +122,7 @@ class sendLog{
 			$put .= "</table>\n\n";
 			$put .= "<a style='margin-top: 15px;font-family: Arial;font-size:95%;border-spacing:0px; display:block; color:#000;' href=#>code diary</a>";
 			try {
-				sendMail($email, "代码日报", $put);
+				$this->sendMail($email, "代码日报", $put);
 			} catch (Exception $e) {
 				echo $e->getMessage . "\n";
 			}
